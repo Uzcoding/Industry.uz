@@ -1,0 +1,77 @@
+.pen {
+    padding: 40px 0 80px;
+    background: url('../../../assets/img/pen-bg.jpg') no-repeat right;
+    background-size: contain;
+
+    &__wrapper {
+        max-width: 570px;
+        padding: 0 15px;
+        margin:0 auto;
+        margin-left: 50px;
+    }
+
+
+    &__title {
+        margin: 150px 0 180px;
+
+        font-size: 65px;
+        font-weight: normal;
+        color: $title-color;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .pen {
+        padding: 30px 0 70px;
+        background-size: 50% 100%;
+
+        &__wrapper {
+            max-width: 470px;
+            margin-left: 25px;
+        }
+    
+    
+        &__title {
+            margin: 100px 0 150px;
+            font-size: 45px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .pen {
+        padding: 20px 0 50px;
+
+        &__wrapper {
+            max-width: 420px;
+            margin-left: 25px;
+        }
+    
+    
+        &__title {
+            margin: 80px 0 120px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .pen {
+        padding: 20px 0 30px;
+        background: url('../../../assets/img/pen-mobile.jpg') no-repeat top right -50px;
+        background-size: cover;
+
+        &__wrapper {
+            margin: 0;
+            max-width: 330px;
+        }
+    
+    
+        &__title {
+            margin: 80px 0 120px;
+            font-size: 20px;
+        }
+    }
+}

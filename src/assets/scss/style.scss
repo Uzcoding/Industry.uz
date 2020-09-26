@@ -1,0 +1,39 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    }
+}
+@import 'fonts';
+@import 'vars';
+@import 'base';
+
+/* Components */
+@import 'components/selectric';
+@import 'components/popup';
+@import 'components/modal';
+
+
+/* Blocks */
+@import 'blocks/select';
+@import 'blocks/preloader';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/golden-ratio';
+@import 'blocks/event';
+@import 'blocks/slider';
+@import 'blocks/peace';
+@import 'blocks/pen';
+@import 'blocks/production';
+@import 'blocks/partners';
+@import 'blocks/contact';
+
+
+/* Pages */
+
+@import 'pages/events';
+@import 'pages/peace';

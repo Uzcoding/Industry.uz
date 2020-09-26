@@ -1,0 +1,205 @@
+.production {
+    position: relative;
+    padding: 40px 0 80px;
+    background: $production-bg;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 110px;
+        width: 30%;
+        max-width: 600px;
+        max-height: 500px;
+    }
+
+    &__wrapper {
+        max-width: 700px;
+        padding: 0 15px;
+        margin:0 auto;
+        margin-left: 50px;
+    }
+
+    &__title {
+        position: relative;
+        margin: 150px 0 180px;
+        font-size: 60px;
+        font-weight: normal;
+    }
+
+    &__subtitle {
+        position: absolute;
+        bottom: -30px;
+        left: 40%;
+        font-size: 30px;
+    }
+
+
+    &-house {
+        position: absolute;
+        bottom: 8%;
+        right: 3%;
+
+        &--uz,
+        &--en {
+            right: 10%;
+        }
+
+        &__title {
+            font-weight: normal;
+            font-size: 40px;
+        }
+
+        &__text {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+}
+
+@media (max-width: 1920px) {
+    .production {
+        &__title br {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .production {
+        position: relative;
+        padding: 30px 0 60px;
+
+        &__bg {
+            max-height: 350px;
+            right: 70px;
+        }
+    
+        &__wrapper {
+            max-width: 420px;
+            margin-left: 25px;
+        }
+    
+        &__title {
+            margin: 120px 0 150px;
+            font-size: 30px;
+        }
+    
+        &__subtitle {
+            position: absolute;
+            bottom: -30px;
+            left: 30%;
+            font-size: 20px;
+        }
+    
+        &-house {
+            position: absolute;
+            bottom: 10%;
+            right: 7%;
+    
+            &__title {
+                font-size: 22px;
+            }
+    
+            &__text {
+                margin-top: 10px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .production {
+        padding: 40px 0 40px;
+        background: url('../../../assets/img/house-mobile.jpg') no-repeat center right;
+        background-size: cover;
+
+        &__bg {
+            display: none;
+        }
+    
+        &__wrapper {
+            padding: 0 40px;
+            max-width: 100%;
+            margin-left: 0;
+        }
+    
+        &__title {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 100px 0 180px;
+            font-size: 25px;
+
+            & br {
+                display: block;
+            }
+        }
+    
+        &__subtitle {
+            position: absolute;
+            bottom: -18px;
+            right: 0;
+            font-size: 18px;
+        }
+    
+        &-house {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            left: 0;
+            right: 0;
+            bottom: 90px;
+    
+            &__title {
+                font-size: 22px;
+            }
+    
+            &__text {
+                margin-top: 10px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .production {
+        padding: 40px 0 40px;
+    
+        &__wrapper {
+            padding: 0 25px;
+            margin: 0;
+        }
+    
+        &__title {
+            margin: 80px 0 180px;
+            font-size: 23px;
+        }
+    
+        &__subtitle {
+            position: absolute;
+            bottom: -30px;
+            left: 30%;
+            font-size: 16px;
+        }
+    
+        &-house {
+            position: absolute;
+    
+            &__title {
+                font-size: 20px;
+            }
+    
+            &__text {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}

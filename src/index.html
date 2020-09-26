@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry</title>
+    <link rel="stylesheet" href="assets/css/libs.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+    <div id="page-prelodaer" class="preloader">
+        <div class="loader">
+            <img class="loader_logo" src="assets/img/preloader_logo.svg" alt="loader_logo">
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="navbar__wrapper">
+            <a href="#">
+                <img class="nav__logo" src="assets/img/color-logo.png" alt="logo" data-scroll="#home">
+            </a>
+
+            <ul class="nav__links navbar__links">
+                <li class="nav__item navbar__item">
+                    <a class="nav__link hover" href="#" data-scroll="#peace">Покой души</a>
+                </li>
+
+                <li class="nav__item navbar__item">
+                    <a class="nav__link navbar__link hover" href="#" data-scroll="#event">Создание событий</a>
+                </li>
+
+                <li class="nav__item navbar__item">
+                    <a class="nav__link navbar__link hover" href="#" data-scroll="#pen">Творческая ручка</a>
+                </li>
+
+                <li class="nav__item navbar__item">
+                    <a class="nav__link navbar__link hover" href="#" data-scroll="#production">Студия производства</a>
+                </li>
+
+                <li class="nav__item navbar__item">
+                    <a class="nav__link navbar__link hover" href="#" data-scroll="#contact">Контакты</a>
+                </li>
+
+            </ul>
+
+            <div class="navbar__contact">
+
+                <div class="button-item">
+                    <a href="#callback" class="btn button button-small popup-with-move-anim">Заказать звонок</a>
+                </div>
+
+                <select class="select" onChange="document.location.href=this.options[this.selectedIndex].value;">
+                    <option value="/ru/">RU</option>
+                    <option value="/en/">EN</option>
+                    <option value="/uz/">UZ</option>
+                </select>
+            </div>
+        </div>
+        <div class="burger">
+            <div class="burger-icon"></div>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+            <select class="select" onChange="document.location.href=this.options[this.selectedIndex].value;">
+                <option value="/ru/">RU</option>
+                <option value="/en/">EN</option>
+                <option value="/uz/">UZ</option>
+            </select>
+
+            <div class="button-item">
+                <a href="#callback" class="btn button button-small popup-with-move-anim">Заказать звонок</a>
+            </div>
+
+            <ul class="mobile-nav__list">
+                <li>
+                    <a href="#" data-scroll="#peace">Покой души</a>
+                </li>
+                <li>
+                    <a href="#" data-scroll="#event">Создание событий</a>
+                </li>
+                <li>
+                    <a href="#" data-scroll="#pen">Творческая ручка</a>
+                </li>
+                <li>
+                    <a href="#" data-scroll="#production">Студия производства</a>
+                </li>
+                <li>
+                    <a href="#" data-scroll="#contact">Контакты</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <!-- Header -->
+    <header class="header" id="home">
+        <div class="header__block">
+
+            <div class="header__inner">
+                <div class="wrapper">
+
+                    <div class="header__content">
+                        <h1 class="header__title">События
+                            которые впечатляют</h1>
+
+                        <p class="header__text">Мы создаём события, которые дают вам желаемые эмоции.</p>
+                        <p class="header__text">Для этого, в создании мероприятий, мы руководствуемся
+                            правилом золотого сечения.
+                        </p>
+                    </div>
+
+                    <div class="header__bottom bottom">
+                        <a class="header__link link hover" href="#" data-scroll="#golden">Золотое сечение
+                        </a>
+                        <a class="header__link link" href="#" data-scroll="#golden">
+                            <img class="next" src="assets/img/next.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+                <!-- /.wrapper -->
+            </div>
+
+            <div class="header__img">
+                <img src="assets/img/1.jpg" alt="">
+            </div>
+
+        </div>
+    </header>
+
+    <section class="golden-ratio" id="golden">
+        <div class="big__container">
+
+            <div class="golden-ratio__wrapper" data-aos="fade-right">
+                <nav class="nav">
+                    <a href="#">
+                        <img class="nav__logo" src="assets/img/logo.png"
+                            alt="logo">
+                    </a>
+                </nav>
+
+                <div class="golden-ratio__inner">
+                    <h2 class="golden-ratio__title">Золотое сечение –</h2>
+                    <p class="golden-ratio__text">это высшее проявление структурного и функционального
+                        совершенства целого и его частей в искусстве, науке,
+                        технике и конечно же в природе.</p>
+                </div>
+            </div>
+
+            <div class="golden-ratio__right" data-aos="zoom-in-up">
+                <img class="golden-ratio__img" src="assets/img/2.png" alt="img">
+                <img class="golden-ratio__img" src="assets/img/3.png" alt="img">
+            </div>
+        </div>
+    </section>
+
+    <section class="peace" id="peace">
+        <div class="big__container">
+            <div class="peace__wrapper" data-aos="fade-right" data-aos-offset="300">
+                <nav class="nav peace__nav">
+                    <a href="#">
+                        <img class="nav__logo" src="assets/img/color-logo.png" alt="logo">
+                    </a>
+
+                    <ul class="nav__links">
+                        <li class="nav__item">
+                            <a class="nav__link hover" href="#">Направления</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link hover" href="#">Специалисты</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link hover" href="#">Методология</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2 class="peace__title">
+                    Покой души – это <br>
+                    индустрия душевного
+                    благополучия
+                </h2>
+
+                <p class="peace__text">
+                    Это уникальный сервис, предлагающий вам
+                    возможность устранения психологических
+                    беспокойств, у ваших сотрудников, на всех
+                    уровнях организационной структуры вашей компании.
+                </p>
+
+                <p class="peace__text">
+                    Наша задача – изменить мировоззрение общества
+                    к необходимости сохранения своего психического
+                    здоровья и к понимаю того, что это можно делать самостоятельно.
+                </p>
+
+                <div class="peace__bottom bottom">
+                    <a class="peace__link link hover" href="peace.html">Пригласить нас</a>
+                    <a class="peace__link link" href="peace.html">
+                        <img class="next" src="assets/img/next.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="event" id="event">
+        <div class="event__block">
+
+            <div class="event__wrapper" data-aos="fade-right">
+                <nav class="nav event__nav">
+                    <a href="#">
+                        <img class="nav__logo" src="assets/img/color-logo.png" alt="logo">
+                    </a>
+
+                    <ul class="nav__links">
+                        <li class="nav__item">
+                            <a class="nav__link hover" href="#">Рубрикатор</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link hover" href="#">Портфолио</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link hover" href="#">Заказать мероприятие</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2 class="event__title">
+                    Индустрия <br>
+                    впечатлений
+                </h2>
+
+                <div class="event__bottom bottom">
+                    <a class="event__link link hover hover" href="#">Ивенты</a>
+                    <a class="event__link link" href="#" data-scroll="#peace">
+                        <img class="next" src="assets/img/next.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="event__slider" data-aos="zoom-in-up">
+                <div class="slider">
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-1.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-2.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-3.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-4.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-5.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-6.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-7.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-8.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-9.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-10.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-11.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="assets/img/s-12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider__arrows">
+                    <div class="slider__prev">
+                        <img src="assets/img/slider-prev.png" alt="">
+                    </div>
+                    <div class="slider__next">
+                        <img src="assets/img/slider-prev.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="event__footer">
+            <div class="event__vision vision">
+                <h3 class="vision__title" data-aos="zoom-in-up">Наше видение</h3>
+                <p class="vision__text" data-aos="zoom-in-up">
+                    Мы не можем отказаться от идеи, <br>
+                    что организация мероприятий, <br>
+                    это сложное искусство
+                </p>
+            </div>
+            <div class="event__therefore therefore">
+                <p class="therefore__text" data-aos="zoom-in-up">
+                    <strong>Поэтому</strong>, создавая событие, мы создаём
+                    шедевры впечатлений, для всех, кому важна
+                    гармония и совершенный результат
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pen" id="pen">
+        <div class="big__container">
+            <div class="pen__wrapper" data-aos="fade-right" data-aos-offset="300">
+                <nav class="nav pen__nav">
+                    <a href="#">
+                        <img class="nav__logo" src="assets/img/color-logo.png" alt="logo">
+                    </a>
+
+                    <ul class="nav__links">
+                        <li class="nav__item">
+                            <a class="nav__link hover" href="#">Рубрикатор</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link hover" href="#">Школа</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link hover" href="#">Заказать текст</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2 class="pen__title">
+                    Вначале было слово...
+                </h2>
+
+                <div class="pen__bottom bottom">
+                    <a class="pen__link link hover" href="#">
+                        Творческая ручка
+                    </a>
+                    <a class="pen__link link" href="#" data-scroll="#production">
+                        <img class="next" src="assets/img/next.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="production" id="production">
+        <div class="big__container">
+
+            <img class="production__bg" src="assets/img/production-bg.jpg" alt="">
+
+            <div class="production__wrapper" data-aos="fade-right" data-aos-offset="300">
+                <nav class="nav production__nav">
+                    <a href="#">
+                        <img class="nav__logo" src="assets/img/color-logo.png" alt="logo">
+                    </a>
+
+                    <ul class="nav__links production__links">
+                        <li class="nav__item">
+                            <a class="nav__link hover" href="#">Портфолио</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link hover" href="#">Заказать услугу</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2 class="production__title">
+                    Всё начинается со взгляда. <br>
+                    Всегда.
+                    <span class="production__subtitle">А.П.Чехов</span>
+                </h2>
+
+                <div class="production__bottom bottom">
+                    <a class="production__link link hover" href="#">
+                        Создать проект
+                    </a>
+                    <a class="production__link link" href="#" data-scroll="#partners">
+                        <img class="next" src="assets/img/next.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="production-house" data-aos="zoom-in-up">
+                <h2 class="production-house__title">
+                    Производственный дом –
+                </h2>
+                <p class="production-house__text">
+                    это место, где мысли превращаются <br>
+                    в осязаемые образы
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="partners" id="partners">
+        <div class="container">
+            <div class="partners__block">
+                <a class="partners__link link" data-aos="fade-right" href="#" data-scroll="#production">
+                    <img src="assets/img/prev.png" alt="">
+                </a>
+
+                <div class="partners__info">
+                    <p class="partners__info--text" data-aos="zoom-in-down">
+                        Все люди, инстинктивно ищут партнёров <br>
+                        со схожими взглядами. Мы их нашли.
+                    </p>
+
+                    <div class="partners__img" data-aos="zoom-in-up">
+                        <a href="#" class="partners__logo">
+                            <img src="assets/img/p-1.png" alt="">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/img/p-2.png" alt="">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/img/p-3.png" alt="">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/img/p-4.png" alt="">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/img/p-5.png" alt="">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/img/p-6.png" alt="">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/img/p-7.png" alt="">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/img/p-8.png" alt="">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/img/p-9.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partners__content">
+                <h2 class="partners__title" data-aos="fade-right">
+                    Единомыслие <br>
+                    в людях и брендах
+                </h2>
+
+                <p class="partners__text" data-aos="fade-right" >
+                    В бизнесе, танго и в жизни, <br>
+                    главное — партнёр.
+                </p>
+            </div>
+
+            <img src="assets/img/partners-hands.png" alt="" class="partners__bg">
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__navbar">
+                <div class="contact__links">
+                    <a class="contact__link link hover" href="#">WHATSAPP</a>
+                </div>
+
+                <div class="contact__callback">
+                    <a class="contact__link-white link button button-small popup-with-move-anim hover__white"
+                        href="#callback">ОБРАТНАЯ СВЯЗЬ</a>
+                </div>
+
+                <img class="contact__logo nav__logo" src="assets/img/logo.png" alt="">
+            </div>
+
+            <ul class="contact__list">
+                <li class="contact__item">
+                    <a class="contact__link link rotate hover" href="#">TELEGRAM</a>
+                </li>
+
+                <li class="contact__item">
+                    <a class="contact__link link rotate hover" href="#">POST</a>
+                </li>
+
+                <li class="contact__item">
+                    <a class="contact__link link rotate hover"
+                        href="https://www.instagram.com/companyindustry?r=nametag">INSTAGRAM</a>
+                </li>
+
+                <li class="contact__item">
+                    <a class="contact__link link rotate hover" href="#">FACEBOOK</a>
+                </li>
+            </ul>
+
+            <div class="contact__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d749.5243421266041!2d69.25776602920583!3d41.284985306460506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8aeb60cc614f%3A0xe6b6620002bed755!2z0KHRgtCw0YLRjCDQsdC70LjQttC1INC6INGB0LLQvtC10Lkg0YbQtdC70LXQstC-0Lkg0LDRg9C00LjRgtC-0YDQuNC4!5e0!3m2!1sru!2s!4v1596033645426!5m2!1sru!2s"
+                    width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+            <div class="contact__info">
+                <a class="contact__mail" href="mailto:art@indstry.uz">
+                    art@indstry.uz
+                </a>
+                <a class="contact__phone" href="tel:+998997969256">
+                    +998 99 796 92 56
+                </a>
+                <span class="contact__address">
+                    Ул. Абдулла Каххара 23
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="hidden">
+        <div class="mfp-container mfp-inline-holder">
+            <div class="mfp-content">
+                <form class="popup-form callback zoom-anim-dialog" id="callback" method="POST">
+                    <div class="success">
+                        <h4 class="success__title">Спасибо за заявку!</h4>
+                        <p class="success__text">Наши менеджеры свяжутся с вами в
+                            ближайшее время.</p>
+                    </div>
+
+                    <h4 class="popup__title">Закажите обратный звонок</h4>
+                    <input type="text" name="name" placeholder="Ведите ваше имя" required>
+                    <input type="text" name="company" placeholder="Ведите название компании">
+                    <input type="tel" name="phone" placeholder="Ведите телефон" required>
+                    <div class="button-center">
+                        <button class="button">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.body.onload = function () {
+
+            var preloader = document.querySelector('#page-prelodaer');
+            setTimeout(function () {
+                if (!preloader.classList.contains('done')) {
+                    preloader.classList.add('done');
+                }
+            }, 2000)
+
+        }
+    </script>
+    <script src="assets/js/libs.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+</body>
+
+</html>

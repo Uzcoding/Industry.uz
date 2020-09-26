@@ -1,0 +1,119 @@
+.peace {
+    padding: 40px 0 80px;
+    background: url('../../../assets/img/9.jpg') no-repeat top center;
+    background-size: cover;
+
+    &__wrapper {
+        max-width: 570px;
+        padding: 0 15px;
+        margin:0 auto;
+        margin-left: 50px;
+    }
+
+
+    &__title {
+        margin: 70px 0 20px;
+
+        font-size: 50px;
+        font-weight: normal;
+        color: $title-color;
+    }
+
+    &__text {
+        font-size: 19px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    &__bottom {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .peace {
+        background: url('../../../assets/img/9.jpg') no-repeat  top -70px center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1200px) {
+    .peace {
+        padding: 30px 0 60px;
+    
+        &__wrapper {
+            max-width: 470px;
+            margin-left: 25px;
+        }
+    
+    
+        &__title {
+            margin: 50px 0 15px;
+            font-size: 35px;
+        }
+    
+        &__text {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 25px;
+        }
+    
+        &__bottom {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .peace {
+        padding: 20px 0 40px;
+    
+        &__wrapper {
+            max-width: 420px;
+            margin-left: 25px;
+        }
+    
+    
+        &__title {
+            margin: 40px 0 15px;
+            font-size: 25px;
+        }
+    
+        &__text {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    
+        &__bottom {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .peace {
+        padding: 20px 0 30px;
+        background: url('../../../assets/img/peace-mobile.jpg') no-repeat top right -200px;
+        background-size: cover;
+    
+        &__wrapper {
+            max-width: 330px;
+            margin: 0;
+        }
+    
+    
+        &__title {
+            margin: 30px 0 10px;
+            font-size: 20px;
+        }
+    
+        &__text {
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+    
+        &__bottom {
+            margin-top: 20px;
+        }
+    }
+}

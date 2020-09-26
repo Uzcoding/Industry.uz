@@ -1,0 +1,125 @@
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    
+    background: rgba($color: #000000, $alpha: .5);
+}
+
+.modal {
+    position: fixed;
+    max-width: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -300%);
+    background: $white;  
+
+    border: 3px solid $text-color;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform .6s ease;
+
+    &--active {
+        transform: translate(-50%, -50%);
+    }
+    
+    &__close {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 0;
+        right: 0;
+        font-size: 35px;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        transition: all .3s ease;
+        border: 1px solid none;
+        border-top-right-radius: 15px;
+
+        &:hover {
+            background: red;
+            color: $white;
+        }
+    }
+
+    &-title {
+        font-size: 25px;
+        margin: 40px 0 30px;
+        text-align: center;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: 15px;
+
+        font-size: 22px;
+        font-weight: bold;
+        color: $text-color;
+        text-decoration: none;
+
+    }
+
+    &-text {
+        padding: 0 20px;
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    &__text {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .modal {
+        overflow-y: auto;
+        max-height: 450px;
+        &__title {
+            font-size: 18px;
+        }
+
+        &-title {
+            font-size: 22px;
+            margin: 30px 0 20px;
+        }
+
+        &-text {
+            padding: 0 15px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .modal {
+        &__title {
+            font-size: 17px;
+        }
+
+        &-title {
+            font-size: 20px;
+            margin: 25px 0 18px;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .modal {
+        width: 90%;
+
+        &__title {
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        &-title {
+            font-size: 18px;
+            margin: 25px 0 18px;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+.slider {
+    &__img {
+        display: block;
+        width: 700px;
+    }
+
+    &__item:focus {
+        outline: none;
+    }
+
+    &__item:hover {
+        cursor: pointer;
+    }
+
+    &__arrows {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__prev,
+    &__next {
+        display: flex;
+        padding: 40px 50px;
+        cursor: pointer;
+    }
+
+    &__prev {
+        background-color: #E0E0E0;
+    }
+
+    &__next {
+        background-color: #ACACAC;
+    }
+    
+    &__prev > img,
+    &__next > img {
+        width: 15px;
+    }
+
+    &__next > img {
+        transform: rotate(180deg);
+    }
+
+}
+
+@media (min-width: 1920px) {
+    .slick-slide img {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .slick-slide img {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slider {
+        &__img {
+            width: 650px;
+            margin-bottom: -15px;
+        }
+    
+        &__prev,
+        &__next {
+            padding: 35px 45px;
+        }
+        
+        &__prev > img,
+        &__next > img {
+            width: 13px;
+        }  
+    }
+}
+
+@media (max-width: 992px) {
+    .slider {
+        &__img {
+            width: 100%;
+            max-width: 992px;
+        }
+    
+        &__prev,
+        &__next {
+            padding: 35px 45px;
+        }
+        
+        &__prev > img,
+        &__next > img {
+            width: 13px;
+        }  
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        &__prev,
+        &__next {
+            padding: 30px 40px;
+        }
+        
+        &__prev > img,
+        &__next > img {
+            width: 12px;
+        } 
+        
+        &__img {
+            margin-bottom: -10px;
+        }  
+    }
+}
+
+@media (max-width: 568px) {
+    .slider {
+        &__prev,
+        &__next {
+            padding: 20px 30px;
+        }
+        
+        &__prev > img,
+        &__next > img {
+            width: 10px;
+        }
+
+        &__img {
+            margin-bottom: -15px;
+        }  
+    }
+}
