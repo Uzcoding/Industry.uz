@@ -1,0 +1,170 @@
+
+
+.peacepage {
+
+    &__block {
+        display: flex;
+    }
+
+    &__wrapper {
+        width: 900px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__nav {
+        width: 50%;
+    }
+
+    &__bottom {
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    &__content {
+        padding: 0 50px;
+    }
+
+    &-first {
+        padding: 10px 0 100px;
+        margin: 60px 0;
+        background: $peacepage-first;
+
+
+        &__img {
+            flex-basis: 50%;
+
+            & img {
+                position: absolute;
+                top: 2%;
+                right: 0;
+                width: 22%;
+                margin-left: auto;
+                max-width: 100%;
+            }
+        }
+
+        &__title {
+            font-size: 32px;
+            margin: 50px 0;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+            font-size: 18px;
+
+            &:first-of-type {
+                font-style: italic;
+            }
+        }
+
+    }
+
+    &-second {
+        padding-bottom: 50px;
+        &-block {
+            position: relative;
+        }
+        &__img {
+            width: 250px;
+            position: absolute;
+            top: 13%;
+            right: 0;
+            & img {
+                width: 90%;
+                max-width: 100%;
+            }
+        }
+
+
+        &__block {
+            display: flex;
+            margin: 70px -10px 80px;
+        }
+
+        &__item {
+            padding: 0 10px;
+        }
+
+        &__logo {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        &__subtitle {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        &__text {
+            font-size: 24px;
+            margin-bottom: 80px;
+
+            & strong {
+                font-size: 33px;
+            }
+        }
+    }
+
+    &-third {
+        padding: 50px 0;
+        background: $peacepage-first;
+
+        &__block {
+            position: relative;
+        }
+
+        &__title {
+            font-size: 70px;
+            margin: 30px 0 50px;
+        }
+
+        &__text {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 21px;
+            font-weight: 600;
+        }
+
+        &__wrapper {
+            width: 750px;
+        }
+
+        &__nav {
+            width: 60%;
+        }
+
+        &__img {
+            position: absolute;
+            right: 2%;
+            bottom: 0;
+            width: 550px;
+            & img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &-last {
+        padding: 50px 0;
+        background: url('../../../assets/img/peacepage-last.jpg') no-repeat center right 40%;
+        background-size: cover;
+
+        &__wrapper {
+            max-width: 800px;
+        }
+
+        &__title {
+            margin: 50px 0;
+            font-size: 35px;
+        }
+
+        &__text {
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}

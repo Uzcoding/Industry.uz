@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry</title>
+    <link rel="stylesheet" href="assets/css/libs.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar__wrapper">
+            <a href="#">
+                <img class="nav__logo" src="assets/img/color-logo.png" alt="logo" data-scroll="#home">
+            </a>
+
+            <div class="navbar__contact">
+
+                <div class="button-item">
+                    <a href="#callback" class="btn button button-small popup-with-move-anim">Заказать звонок</a>
+                </div>
+
+                <select class="select" onChange="document.location.href=this.options[this.selectedIndex].value;">
+                    <option value="/ru/">RU</option>
+                    <option value="/en/">EN</option>
+                    <option value="/uz/">UZ</option>
+                </select>
+            </div>
+        </div>
+        <div class="burger">
+            <div class="burger-icon"></div>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+            <select class="select" onChange="document.location.href=this.options[this.selectedIndex].value;">
+                <option value="/ru/">RU</option>
+                <option value="/en/">EN</option>
+                <option value="/uz/">UZ</option>
+            </select>
+
+            <div class="button-item">
+                <a href="#callback" class="btn button button-small popup-with-move-anim">Заказать звонок</a>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <div class="hidden">
+        <div class="mfp-container mfp-inline-holder">
+            <div class="mfp-content">
+                <form class="popup-form callback zoom-anim-dialog" id="callback" method="POST">
+                    <div class="success">
+                        <h4 class="success__title">Спасибо за заявку!</h4>
+                        <p class="success__text">Наши менеджеры свяжутся с вами в
+                            ближайшее время.</p>
+                    </div>
+
+                    <h4 class="popup__title">Закажите обратный звонок</h4>
+                    <input type="text" name="name" placeholder="Ведите ваше имя" required>
+                    <input type="text" name="company" placeholder="Ведите название компании">
+                    <input type="tel" name="phone" placeholder="Ведите телефон" required>
+                    <div class="button-center">
+                        <button class="button">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/libs.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+</body>
+
+</html>
