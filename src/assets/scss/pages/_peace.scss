@@ -1,4 +1,13 @@
 .peacepage {
+    
+    &__title {
+        font-size: 32px;
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+
     &__block {
         display: flex;
     }
@@ -41,15 +50,14 @@
         }
 
         &__title {
-            font-size: 32px;
             margin: 50px 0;
         }
 
         &__text {
             margin-bottom: 20px;
-            font-size: 18px;
 
-            &:first-of-type {
+            &:first-of-type,
+            &:last-of-type {
                 font-style: italic;
             }
         }
@@ -97,12 +105,7 @@
         }
 
         &__text {
-            font-size: 24px;
             margin-bottom: 80px;
-
-            & strong {
-                font-size: 33px;
-            }
         }
     }
 
@@ -115,7 +118,6 @@
         }
 
         &__title {
-            font-size: 70px;
             margin: 30px 0 50px;
         }
 
@@ -157,12 +159,11 @@
 
         &__title {
             margin: 50px 0;
-            font-size: 35px;
         }
 
         &__text {
             margin-bottom: 15px;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: 600;
         }
     }
@@ -305,10 +306,18 @@
         }
 
         &-first {
+            position: relative;
             margin-top: 45px;
 
             &__img {
-                display: none;
+                & img {
+                    position: absolute;
+                    top: 5%;
+                    right: 0;
+                    opacity: .2;
+                    width: 40%;
+                    max-width: 100%;
+                }
             }
         }
 
@@ -495,6 +504,10 @@
     
             &__text {
                 font-size: 14px;
+            }
+
+            &__img {
+                display: none;
             }
         }
 

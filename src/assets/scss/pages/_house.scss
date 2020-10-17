@@ -1,4 +1,5 @@
 .house {
+    height: 100vh;
     margin-top: 50px;
     padding: 40px 0 80px;
     background: url('../../../assets/img/house.jpg') no-repeat center top / cover;
@@ -8,7 +9,7 @@
     }
 
     &__nav {
-        width: 50%; 
+        width: 50%;
     }
 
     &__wrapper {
@@ -33,5 +34,99 @@
         margin-top: 30px;
         width: 50%;
     }
+}
 
+@media (max-width: 1200px) {
+    .house {
+        margin-top: 40px;
+        padding: 35px 0 60px;
+        background: url('../../../assets/img/house.jpg') no-repeat center top / cover;
+
+        &__content {
+            padding: 0 40px;
+        }
+
+        &__nav {
+            width: 50%;
+        }
+
+        &__wrapper {
+            max-width: 800px;
+        }
+
+        &__title {
+            font-size: 45px;
+            margin: 70px 0;
+        }
+
+        &__text {
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .house {
+        background: #CFC4A4;
+    }
+}
+
+@media (max-width: 768px) {
+    .house {
+        height: 100vh;
+        padding: 25px 0 50px;
+
+        &__nav {
+            width: 80%;
+        }
+
+        &__wrapper {
+            max-width: 540px;
+        }
+
+        &__title {
+            font-size: 35px;
+            margin: 50px 0;
+        }
+
+        &__text {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .house {
+        margin-top: 30px;
+        height: 100vh;
+        padding: 25px 0 0;
+
+        &__nav {
+            width: 100%;
+        }
+
+        &__content {
+            padding: 0 25px;
+        }
+
+        &__wrapper {
+            max-width: 540px;
+        }
+
+        &__title {
+            font-size: 25px;
+            margin: 35px 0;
+        }
+
+        &__text {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        &__bottom {
+            width: 100%;
+        }
+    }
 }
