@@ -16,10 +16,6 @@ body {
     overflow: hidden;
 }
 
-.section {
-    height: 100vh;
-}
-
 .wrapper {
     max-width: 770px;
     margin: 0 auto;
@@ -180,6 +176,10 @@ body {
     .container {
         max-width: 1050px;
     }
+
+    .title {
+        font-size: 23px !important;
+    }
 }
 
 @media (max-width: 992px) {
@@ -193,6 +193,10 @@ body {
         &:hover:after {
             display: none;
         }
+    }
+
+    .title {
+        font-size: 22px !important;
     }
     
 }
@@ -216,6 +220,10 @@ body {
 
     .section {
         max-height: 500px;
+    }
+
+    .title {
+        font-size: 22px !important;
     }
 }
 
@@ -243,5 +251,9 @@ body {
     .section {
         height: 550px;
         max-height: 700px;
+    }
+
+    .title {
+        font-size: 20px !important;
     }
 }

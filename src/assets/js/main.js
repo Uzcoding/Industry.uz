@@ -23,7 +23,6 @@ AOS.init({
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
 });
 
 $(function () {
@@ -47,13 +46,13 @@ $(function () {
     var body = $('body');
     var links = $('.mobile-nav__list li a');
 
-    burger.click(function () {
+    burger.on('click', function () {
         burgerIcon.toggleClass('burger-icon-active');
         menu.toggleClass('mobile-nav--active');
         body.toggleClass('lock');
     });
 
-    links.click(function () {
+    links.on('click', function () {
         burgerIcon.toggleClass('burger-icon-active');
         menu.toggleClass('mobile-nav--active');
         body.toggleClass('lock');
@@ -81,28 +80,46 @@ $(function () {
         modalTitle = $('.modal-title'),
         modalText = $('.modal-text'),
         modalLink = $('.modal__title');
-        text = $('.modal__text');
+    text = $('.modal__text');
 
     overlay.hide();
 
 
-    modalLink.on('click', function(e) {
+    modalLink.on('click', function (e) {
         e.preventDefault();
         overlay.show();
         modal.toggleClass('modal--active');
         modalTitle.html($(this).html())
         modalText.html($(this).find(text).html())
         body.toggleClass('lock')
-        
+
     });
 
-    modalClose.click(function() {
+    modalClose.on('click', function () {
         modal.toggleClass('modal--active');
         overlay.hide();
         body.toggleClass('lock')
     });
 
-    
+    // $('#fullpage').fullpage({
+    //     //options here
+    //     autoScrolling:true,
+    //     fadingEffect: true,
+    //     verticalCentered: true,
+    //     scrollOverflow: true,
+    //     sectionSelector: '.scroll',
 
-
+    //     onLeave: function(){
+    //         $('.scroll [data-aos]').removeClass("aos-animate");
+    //     },
+    //     onSlideLeave: function(){
+    //         $('.scroll [data-aos]').removeClass("aos-animate");
+    //     },
+    //     afterSlideLoad: function(){
+    //         $('.scroll.active [data-aos]').addClass("aos-animate");
+    //     },
+    //     afterLoad: function(){
+    //         $('.scroll.active [data-aos]').addClass("aos-animate");
+    //     }
+    // });
 });

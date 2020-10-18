@@ -104,6 +104,8 @@ function libsCss() {
         'node_modules/normalize.css/normalize.css',
         'node_modules/aos/dist/aos.css',
         'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/fullpage.js/dist/fullpage.css',
+        // 'node_modules/pagepiling.js/dist/jquery.pagepiling.css',
         // 'node_modules/font-awesome/css/font-awesome.css',
         // 'node_modules/materialize-css/dist/css/materialize.css'
         // 'node_modules/bootstrap/dist/css/bootstrap.min.css',
@@ -143,8 +145,10 @@ function js() {
 function libsJs() {
     return gulp.src([ //тут подключаем разные js в общую библиотеку. Отключите то, что вам не нужно.
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/fullpage.js/dist/fullpage.js',
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/aos/dist/aos.js',
+        // 'node_modules/pagepiling.js/dist/jquery.pagepiling.js',
         // 'node_modules/materialize-css/dist/js/materialize.js'
         // 'node_modules/wowjs/dist/wow.js',
         // 'node_modules/swiper/swiper-bundle.min.js',
