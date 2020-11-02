@@ -35,8 +35,8 @@
         flex: 1 1 90%;
 
         & img {
-            margin-top: 10px;
             max-width: 100%;
+
         }
     }
 
@@ -58,6 +58,7 @@
     }
 
     &-bottom {
+        padding-bottom: 0;
         margin-bottom: 0;
 
         &__title {

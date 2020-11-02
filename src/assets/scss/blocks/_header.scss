@@ -45,8 +45,6 @@
 
 @media (min-width: 1920px) {
     .header {
-        max-height: 700px;
-
         &__img img {
             max-width: 100%;
         }
@@ -55,7 +53,6 @@
 
 @media (max-width: 1920px) {
     .header {
-        max-height: 700px;
         &__img {
             flex: 1 1 200px;
         }
@@ -166,13 +163,14 @@
         }
 
         &__img {
-            display: flex;  
-            flex: auto;
+            display: flex;
+            min-height: 350px;
+            background: url('../../assets/img/1.jpg') no-repeat center top / cover;
 
             &>img {
-                display: block;
-                max-width: 100%;
-                flex: 100%;
+                display: none;
+                // max-width: 100%;
+                // flex: 100%;
             }
         }
 

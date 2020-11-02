@@ -21,9 +21,6 @@
         color: $white;
     }
 
-    &__item:nth-child(2) {
-       padding-bottom: 20px;
-    }
 
     &__list {
         list-style: none;
@@ -36,6 +33,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    &__item {
+        height: 110px;
     }
 
     &__info {

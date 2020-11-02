@@ -76,7 +76,7 @@
 
 @media (max-width: 1200px) {
     .modal {
-        overflow-y: auto;
+        overflow-y: scroll !important;
         max-height: 450px;
         &__title {
             font-size: 18px;

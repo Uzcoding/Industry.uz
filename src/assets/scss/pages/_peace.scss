@@ -50,7 +50,7 @@
         }
 
         &__title {
-            margin: 50px 0;
+            margin: 40px 0;
         }
 
         &__text {
@@ -179,6 +179,10 @@
             padding: 0 25px;
         }
 
+        &__title {
+            font-size: 30px;
+        }
+
         &-first {
             margin-top: 50px;
 
@@ -195,7 +199,6 @@
             }
     
             &__title {
-                font-size: 28px;
                 margin: 40px 0;
             }
     
@@ -246,14 +249,12 @@
         &-third {
     
             &__title {
-                font-size: 60px;
                 margin: 25px 0 40px;
             }
     
             &__text {
                 margin-bottom: 12px;
                 line-height: 1.7;
-                font-size: 18px;
             }
     
             &__wrapper {
@@ -283,7 +284,6 @@
     
             &__title {
                 margin: 40px 0;
-                font-size: 30px;
             }
     
             &__text {
@@ -303,6 +303,14 @@
     .peacepage {
         &__wrapper {
             max-width: 800px;
+        }
+
+        &__title {
+            font-size: 28px;
+        }
+    
+        &__text {
+            font-size: 17px;
         }
 
         &-first {
@@ -358,12 +366,10 @@
     
             &__title {
                 margin: 40px 0;
-                font-size: 30px;
             }
     
             &__text {
                 margin-bottom: 12px;
-                font-size: 17px;
             }
 
             &__content {
@@ -375,6 +381,14 @@
 
 @media (max-width: 768px) {
     .peacepage {
+
+        &__title {
+            font-size: 25px;
+        }
+    
+        &__text {
+            font-size: 16px;
+        }
 
         &__nav {
             width: 70%;
@@ -398,13 +412,9 @@
             margin-top: 50px;
     
             &__title {
-                font-size: 25px;
                 margin: 30px 0;
             }
     
-            &__text {
-                font-size: 15px;
-            }
         }
 
         &-second {
@@ -429,7 +439,6 @@
             }
     
             &__text {
-                font-size: 18px;
                 margin-bottom: 40px;
     
                 & strong {
@@ -441,7 +450,6 @@
         &-third {
             padding-top: 30px;
             &__title {
-                font-size: 50px;
                 margin: 25px 0 35px;
             }
     
@@ -477,6 +485,14 @@
 @media (max-width: 568px) {
     .peacepage {
 
+        &__title {
+            font-size: 20px;
+        }
+    
+        &__text {
+            font-size: 15px;
+        }
+
         &__nav {
             width: 100%;
         }
@@ -498,7 +514,6 @@
             margin-top: 35px;
     
             &__title {
-                font-size: 18px;
                 margin: 25px 0;
             }
     
@@ -533,7 +548,6 @@
             }
     
             &__text {
-                font-size: 14px;
                 margin-bottom: 30px;
     
                 & strong {
@@ -546,13 +560,11 @@
             padding-top: 25px;
             padding-bottom: 20px;
             &__title {
-                font-size: 40px;
                 margin: 20px 0 30px;
             }
     
             &__text {
                 line-height: 1.4;
-                font-size: 14px;
             }
     
             &__wrapper {
@@ -561,7 +573,7 @@
         }
 
         &-last {
-            
+            background: url('../../../assets/img/peacepage-last.jpg') no-repeat top right 40% / cover;
             &__content {
                 padding-left: 20px;
             }
@@ -578,12 +590,8 @@
     
             &__title {
                 margin: 25px 0;
-                font-size: 18px;
             }
     
-            &__text {
-                font-size: 14px;
-            }
         }
     }
 }

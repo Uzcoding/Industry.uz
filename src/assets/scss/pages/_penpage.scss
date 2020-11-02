@@ -1,5 +1,6 @@
 .penpage {
     &__nav {
+        padding-top: 60px;
         width: 50%;
     }
 
@@ -20,8 +21,6 @@
     }
 
     &-first {
-        padding: 40px 0 180px;
-        margin-top: 60px;
         background: url('../../../assets/img/pen-first.jpg') no-repeat center / cover;
 
 
@@ -47,11 +46,10 @@
     }
 
     &-second {
-        padding: 40px 0 100px;
         background: url('../../../assets/img/pen-second.jpg') no-repeat center / cover;
 
         &__title {
-            margin: 70px 0;
+            margin: 50px 0;
         }
 
         &__text {
@@ -68,11 +66,10 @@
     }
 
     &-last {
-        padding: 40px 0 100px;
         background: url('../../../assets/img/pen-third.jpg') no-repeat center / cover;
 
         &__title {
-            margin: 40px 0;
+            margin: 30px 0;
         }
 
         &__text {
@@ -88,6 +85,7 @@
 @media (max-width: 1200px) {
     .penpage {
         &__nav {
+            padding-top: 0;
             width: 50%;
         }
 
@@ -109,7 +107,8 @@
         }
 
         &-first {
-            padding: 35px 0 150px;
+            padding: 20px 0 100px;
+            height: auto !important;
             margin-top: 40px;
 
             &__title {
@@ -126,10 +125,10 @@
         }
 
         &-second {
-            padding: 35px 0 70px;
-
+            height: auto !important;
+            padding: 20px 0 100px;
             &__title {
-                margin: 60px 0;
+                margin: 40px 0;
             }
 
             &__text {
@@ -138,11 +137,12 @@
         }
 
         &-last {
-            padding: 35px 0 70px;
+            height: auto !important;
+            padding: 20px 0 100px;
             background: url('../../../assets/img/pen-third.jpg') no-repeat center / cover;
 
             &__title {
-                margin: 30px 0;
+                margin: 25px 0;
             }
 
             &__text {
@@ -196,20 +196,19 @@
         }
 
         &__title {
-            font-size: 36px;
+            font-size: 33px;
         }
 
         &__text {
-            font-size: 18px;
+            font-size: 17px;
         }
 
         &-first {
-            padding: 30px 0 80px;
-            margin-top: 40px;
+            padding-bottom: 80px;
             background: #FAFAFA;
 
             &__title {
-                margin: 50px 0;
+                margin: 100px 0 30px;
             }
 
             &__subtitle {
@@ -222,11 +221,11 @@
         }
 
         &-second {
-            padding: 30px 0 50px;
+            padding-bottom: 80px;
             background: #EFEFEF;
 
             &__title {
-                margin: 50px 0;
+                margin: 40px 0;
             }
 
             &__text {
@@ -235,7 +234,7 @@
         }
 
         &-last {
-            padding: 35px 0 50px;
+            padding-bottom: 50px;
             background: #EAE5EB;
 
             &__text {
@@ -256,11 +255,11 @@
         }
 
         &__title {
-            font-size: 26px;
+            font-size: 20px;
         }
 
         &__text {
-            font-size: 17px;
+            font-size: 14px;
         }
 
         &__content {
@@ -268,11 +267,12 @@
         }
 
         &-first {
-            padding: 30px 0 60px;
+            padding-bottom: 50px;
             margin-top: 20px;
+        
 
             &__title {
-                margin: 40px 0;
+                margin: 30px 0;
             }
 
             &__subtitle {
@@ -285,10 +285,9 @@
         }
 
         &-second {
-            padding: 20px 0 40px;
-
+            padding-bottom: 50px;
             &__title {
-                margin: 40px 0;
+                margin: 30px 0;
             }
 
             &__text {
@@ -297,8 +296,12 @@
         }
 
         &-last {
-            padding: 20px 0 40px;
+            padding-bottom: 40px;
             background: #EAE5EB;
+
+            &__title {
+                margin: 10px 0;
+            }
 
             &__text {
                 margin-bottom: 15px;

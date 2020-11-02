@@ -26,6 +26,7 @@
     "panini": "^1.6.3"
   },
   "dependencies": {
+    "ContentTools": "^1.6.12",
     "animate.css": "^4.1.0",
     "aos": "^2.3.4",
     "font-awesome": "^4.7.0",
