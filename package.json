@@ -32,6 +32,7 @@
     "font-awesome": "^4.7.0",
     "fullpage.js": "^3.0.9",
     "jquery": "^3.5.1",
+    "lightgallery": "^1.9.0",
     "materialize-css": "^1.0.0-rc.2",
     "normalize.css": "^8.0.1",
     "pagepiling.js": "^1.5.6",

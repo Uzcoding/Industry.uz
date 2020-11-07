@@ -88,6 +88,63 @@ $(function () {
     });
 
     var w = $(document).width();
+
+    // $('#first-gallery').on('click', function() {
+    //     $('.first-gallery img:first-child').trigger('click');
+    // });
+
+    // $('.first-gallery').lightGallery({
+    //     thumbnail:true,
+    //     animateThumb: false,
+    //     showThumbByDefault: false
+    // });
+
+    $('#video-gallery').on('click', function() {
+        $('.video-gallery img:first-child').trigger('click');
+    });
+    
+
+    $('.video-gallery').lightGallery({
+        youtubePlayerParams: {
+            modestbranding: 1,
+            showinfo: 0,
+            rel: 0,
+            controls: 0
+        },
+        loadYoutubeThumbnail: true,
+        youtubeThumbSize: 'default',
+        thumbnail:true,
+        animateThumb: false,
+        showThumbByDefault: false
+        
+    }); 
+
+    var i = 0;
+    var speed = 30; /* The speed/duration of the effect in milliseconds */
+    // var type = $('.type');
+    // var txt = type.attr('data-content'); /* The text */
+    var gallery = $('.portfolio__content .portfolio-icon ');
+
+    gallery.on('mouseenter', function() {
+        var text = this.nextElementSibling.getAttribute('data-content');
+        var type = this.nextElementSibling;
+        function typeWriter() {
+        if (i < text.length) {
+            type.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+        typeWriter(text);
+    });
+
+
+    gallery.on('mouseleave', function() {
+        i = 0;
+        $('.type').text('');
+    });
+
+ 
     
     if (w > 1200) {
 
